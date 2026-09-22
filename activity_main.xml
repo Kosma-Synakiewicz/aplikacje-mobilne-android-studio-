@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kalkulator BMI"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="40dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Waga (kg)"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/waga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="np. 70"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wzrost (cm)"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/wzrost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="np. 175"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/oblicz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OBLICZ BMI"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/wynik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wynik pojawi się tutaj"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_marginTop="30dp" />
+
+</LinearLayout>
