@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generator haseł"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Długość hasła:"/>
+
+    <EditText
+        android:id="@+id/dlugoscHasla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:text="12" />
+
+    <CheckBox
+        android:id="@+id/maleLitery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Małe litery"
+        android:checked="true"/>
+
+    <CheckBox
+        android:id="@+id/wielkieLitery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wielkie litery"
+        android:checked="true"/>
+
+    <CheckBox
+        android:id="@+id/cyfry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cyfry"
+        android:checked="true"/>
+
+    <CheckBox
+        android:id="@+id/znakiSpecjalne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Znaki specjalne"
+        android:checked="true"/>
+
+    <Button
+        android:id="@+id/generuj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GENERUJ HASŁO"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/wynik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:focusable="false"
+        android:hint="Tutaj pojawi się hasło"/>
+
+</LinearLayout>

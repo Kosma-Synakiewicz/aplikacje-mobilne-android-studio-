@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LICZNIK SIATKÓWKI"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drużyna 1"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/wynik1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/minus1"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="-1" />
+
+        <Button
+            android:id="@+id/plus1"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="+1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drużyna 2"
+        android:textSize="24sp"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/wynik2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/minus2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="-1" />
+
+        <Button
+            android:id="@+id/plus2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="+1" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:layout_marginTop="40dp" />
+
+</LinearLayout>
